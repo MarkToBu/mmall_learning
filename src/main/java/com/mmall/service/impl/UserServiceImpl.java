@@ -45,7 +45,7 @@ public class UserServiceImpl implements IUserService {
     public ServerResponse<String> register(User user) {
 //        int resultCount = userMapper.checkUsername(user.getUsername());
 //        if (resultCount > 0) {
-//            return ServerResponse.createByErrorMessage("用户名已经存在");
+//            return ServerResponse.createByErrorMessage("用户名已经存在");555
 //        }
 
         ServerResponse vaildReponse = this.checkValid(user.getUsername(),Const.USERNAME);
@@ -188,5 +188,13 @@ public class UserServiceImpl implements IUserService {
         }
         user.setPassword(StringUtils.EMPTY );
         return ServerResponse.createBySuccess(user);
+    }
+
+    @Override
+    public ServerResponse checkAdminRole(User user) {
+        if(user != null && user.getRole().intValue() == Const.Role.ROLE_ADMIN){
+            return ServerResponse.createBySuccess();
+        }
+        return  ServerResponse.createByError();
     }
 }
