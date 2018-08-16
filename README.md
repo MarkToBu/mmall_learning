@@ -6,3 +6,4 @@ remote  repository
 
 local repostitory
 Stashed changes
+terminal  123456
