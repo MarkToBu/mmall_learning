@@ -5,4 +5,4 @@ conflict
 conflict 
 conflict 
 
-remote  local
+remote  repository
