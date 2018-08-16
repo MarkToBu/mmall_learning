@@ -5,5 +5,4 @@ conflict
 conflict 
 conflict 
 
-123456
-123456
+remote  local
