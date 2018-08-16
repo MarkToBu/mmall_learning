@@ -14,4 +14,5 @@ remote  repository
 
 local repostitory
 Stashed changes
+terminal  123456
 terminal 0317
