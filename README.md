@@ -5,4 +5,10 @@ conflict
 conflict 
 conflict 
 
+Updated upstream
 remote  repository
+123456
+123456
+
+local repostitory
+Stashed changes
