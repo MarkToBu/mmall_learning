@@ -187,7 +187,7 @@ public class ProductManageController {
             String path = request.getSession().getServletContext().getRealPath("upload");
             String targetFileName = iFileService.upload(file, path);
             if (StringUtils.isBlank(targetFileName)) {
-                Map fileMap = Maps.ngewHashMap();
+                Map fileMap = Maps.newHashMap();
                 fileMap.put("success", false);
                 fileMap.put("msg", "上传失败");
                 return resultMap;
