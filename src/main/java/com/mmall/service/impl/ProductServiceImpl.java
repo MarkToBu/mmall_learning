@@ -218,7 +218,7 @@ public class ProductServiceImpl implements IProductService {
             keyword = new StringBuilder().append("%").append(keyword).append("%").toString();
         }
         PageHelper.startPage(pageNum,pageSize);
-        //排序处理
+        //排序处理哈哈
         if(StringUtils.isNotBlank(orderBy)){
             if(Const.ProductListOrderBy.PRICE_ASC_DESC.contains(orderBy)){
                 String[] orderByArray = orderBy.split("_");
