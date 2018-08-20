@@ -33,6 +33,13 @@ public class CartController {
         return iCartService.add(user.getId(),productId,count);
     }
 
+    /**
+     * 更新购物车的物品
+     * @param session
+     * @param count
+     * @param productId
+     * @return
+     */
     @RequestMapping("update.do")
     @ResponseBody
     public ServerResponse<CartVo> update(HttpSession session, Integer count, Integer productId){
@@ -43,6 +50,12 @@ public class CartController {
         return iCartService.update(user.getId(),productId,count);
     }
 
+    /**
+     * 删除购物车的物品
+     * @param session
+     * @param productIds
+     * @return
+     */
     @RequestMapping("delete_product.do")
     @ResponseBody
     public ServerResponse<CartVo> deleteProduct(HttpSession session, String productIds){
