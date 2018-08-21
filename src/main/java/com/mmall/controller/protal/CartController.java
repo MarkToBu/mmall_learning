@@ -88,7 +88,7 @@ public class CartController {
         }
         return iCartService.selectOrUnSelect(user.getId(),Const.Cart.CHECKED,null);
     }
-    //全反选
+    //全反选1
 
     @RequestMapping("un_select_all.do")
     @ResponseBody
