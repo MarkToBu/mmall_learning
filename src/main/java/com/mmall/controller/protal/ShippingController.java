@@ -15,10 +15,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 
+/**
+ * @author  Lee
+ * 这是一个上传测试 test nocontribution
+ */
 @Controller
 @RequestMapping("/shipping/")
 public class ShippingController {
-
+    /**
+     * 购物车类没传上去啊，测试一下
+     */
     @Autowired
     IShippingService iShippingService;
 
