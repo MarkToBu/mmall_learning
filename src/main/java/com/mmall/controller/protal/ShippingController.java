@@ -23,7 +23,7 @@ import javax.servlet.http.HttpSession;
 @RequestMapping("/shipping/")
 public class ShippingController {
     /**
-     * 购物车类没传上去啊，测试一下
+     * 购物车类没传上去啊，测试失败
      */
     @Autowired
     IShippingService iShippingService;
