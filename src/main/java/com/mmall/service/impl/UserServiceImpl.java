@@ -42,6 +42,7 @@ public class UserServiceImpl implements IUserService {
         return ServerResponse.createBySuccess("登录成功", user);
     }
 
+    @Override
     public ServerResponse<String> register(User user) {
 //        int resultCount = userMapper.checkUsername(user.getUsername());
 //        if (resultCount > 0) {
@@ -61,7 +62,7 @@ public class UserServiceImpl implements IUserService {
         if (resultCount > 0) {
             return ServerResponse.createByErrorMessage("邮箱已经存在");
         }
-        user.setRole(Const.Role.ROLE_CONSTOMER);
+        user.setRole(Const.Role.ROLE_CUSTOMER);
 
         //MD5加密
         user.setPassword(MD5Util.MD5EncodeUtf8(user.getPassword()));
