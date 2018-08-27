@@ -165,7 +165,7 @@
     from mmall_cart where user_id = #{userId}
   </select>
   <select id="selectChecedCartByUserId" parameterType="int" resultMap="BaseResultMap">
-    SELECT 
+    SELECT
     <include refid="Base_Column_List"></include>
     from  mmall_cart
     where user_id = #{userId}
