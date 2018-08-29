@@ -22,7 +22,7 @@ import javax.servlet.http.HttpSession;
 @Controller
 @RequestMapping("/manage/order")
 public class OrderManagController {
-
+    //都是错
     @Autowired
     private IUserService iUserService;
     @Autowired
